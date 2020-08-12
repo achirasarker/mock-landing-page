@@ -1,0 +1,173 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center; /* the whole webpage including all its text/images will be centered*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat"; /* Montserrat-bold for all headers */
+}
+
+p {
+  color: #8F8F8F;
+}
+
+/* Headings */
+.big-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers  */
+.container-fluid {
+  padding: 7% 15%; /* this padding makes arrows further out so they aren't squished in */
+}
+
+/* Sections */
+.colored-section {
+  background-color: #FF4C68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  font-family: "Montserrat"
+}
+
+/* Download Buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+#title .container-fluid { /* for the container fluid class thats contained INSIDE the title section, use this specifc padding (so that navbar isnt so far down from the top)*/
+  padding: 3% 15% 7%;
+  text-align: left; /* should be left-aligned on laptop size */
+}
+
+/* Title Image */
+.iphone {
+  width: 60%; /* makes width 60% of what it used to be */
+  transform: rotate(25deg);
+  position: absolute;
+  /* z-index: -1 (cant put this else phone image will go behind it all) */
+  right: 30%; /* moved 30% to the right*/
+}
+
+/* Features section */
+#features {
+  position: relative;
+  /* z-index: 1 (no need since features section has relative position SO its on top of iphone) */
+}
+
+.features-box {
+  padding: 5%;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.features-img {
+  color: #EF8172;
+  margin-bottom: 1rem; /* or add a padding-top to h3*/
+}
+
+.features-img:hover {
+  color: #FF4C68;
+}
+
+/* Testimonials Section  */
+#testimonials {
+  background-color: #EF8172;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%; /* makes image appear smaller */
+  border-radius: 100%; /* this makes image appear as a circle */
+  margin: 20px;
+}
+
+#press {
+  background-color: #EF8172; /* adding same background color makes it seem like they're part of same section */
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section  */
+#pricing {
+  padding: 100px;
+}
+
+.pricing-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+
+/* Call to Action Section
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+} ---> No longer needed since its part of colored-section*/
+
+
+/* Footer Section  */
+#footer {
+  font-size: 1rem;
+}
+
+.media-icon {
+  padding: 20px 10px;
+}
+
+/* Media queries  */
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center; /*centers the text when on a smaller screen - MUST KEEP THIS 'TEXT ALIGN' because its for a query*/
+  }
+
+  .iphone {
+    position: static;
+    transform: rotate(0); /* rotate(0) means its back to upright position */
+  }
+}
